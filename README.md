@@ -49,7 +49,7 @@ The application is built using **Flask (Python)** with an interactive frontend u
 
 ## 🌍 Live Demo
 
-🔗 **Intel Bug Detection & Fixing Project**
+🔗 **[Intel Bug Detection & Fixing Project](https://openai-bug-fixer-main-1.onrender.com/)**
 *(Add Render link here after deployment)*
 
 ---
