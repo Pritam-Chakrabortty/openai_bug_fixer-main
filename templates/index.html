@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Bug Detection & Fixing</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+            color: #111827;
+        }
+
+        textarea, select {
+            width: 100%;
+            margin-top: 8px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #d1d5db;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn-group {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            cursor: pointer;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        .box {
+            background: #f9fafb;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #2563eb;
+        }
+
+        .box h3 {
+            margin-top: 0;
+            color: #1f2933;
+        }
+
+        pre {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>🐞 AI Bug Detection & Fixing System</h2>
+
+<div class="container">
+
+    <label>Select Language</label>
+    <select id="language">
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+    </select>
+
+    <label>Enter Your Buggy Code</label>
+    <textarea id="code" rows="8" placeholder="Write buggy code here..."></textarea>
+
+    <div class="btn-group">
+        <button onclick="explainErrors()">Explain Errors</button>
+        <button onclick="fixCode()">Fix Code</button>
+    </div>
+
+    <div class="box">
+        <h3>❌ Error Explanation</h3>
+        <pre id="explanation">No explanation yet.</pre>
+    </div>
+
+    <div class="box">
+        <h3>✅ Fixed Code</h3>
+        <pre id="fixedCode">No fixed code yet.</pre>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 AI Bug Detection & Fixing Project | Developed by Pritam Chakrabortty  
+    <br>All rights reserved.
+</footer>
+
+<script>
+function explainErrors() {
+    const code = document.getElementById("code").value.trim();
+    const language = document.getElementById("language").value;
+
+    if (!code) {
+        alert("Please enter code first");
+        return;
+    }
+
+    document.getElementById("explanation").textContent = "Analyzing errors...";
+
+    fetch("/explain", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code, language })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("explanation").textContent = data.explanation;
+    })
+    .catch(() => {
+        document.getElementById("explanation").textContent = "Error connecting to server.";
+    });
+}
+
+function fixCode() {
+    const code = document.getElementById("code").value.trim();
+    const language = document.getElementById("language").value;
+
+    if (!code) {
+        alert("Please enter code first");
+        return;
+    }
+
+    document.getElementById("fixedCode").textContent = "Fixing code...";
+
+    fetch("/fix", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code, language })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("fixedCode").textContent = data.fixed_code;
+    })
+    .catch(() => {
+        document.getElementById("fixedCode").textContent = "Error connecting to server.";
+    });
+}
+</script>
+
+</body>
+</html>
