@@ -150,7 +150,7 @@ http://127.0.0.1:5000
 
 ## 📹 Demo Video
 
-🎥 **Watch Demo:** `demo.mp4`
+🎥 **[Watch Demo:](https://github.com/Pritam-Chakrabortty/openai_bug_fixer-main/releases/download/v0.1-demo/DEMO.mp4)** 
 
 ---
 
