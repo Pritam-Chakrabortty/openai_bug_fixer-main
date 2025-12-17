@@ -162,7 +162,7 @@ http://127.0.0.1:5000
 
 ## 🎤 Presentation
 
-📊 **Slides:** `Intel_Bug_Detection_Fixing.pptx`
+📊 **[Slides:](https://github.com/Pritam-Chakrabortty/openai_bug_fixer-main/blob/main/Intel%C2%AEUnnati%20Industrial%20Training%20Program%202025.pptx)** `Intel_Bug_Detection_Fixing.pptx`
 
 ---
 
