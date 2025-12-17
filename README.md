@@ -54,9 +54,9 @@ The application is built using **Flask (Python)** with an interactive frontend u
 
 ---
 
-## 📁 Project Structure
+## **📁 Project Structure**
 
-```
+
 ```
 AI-Bug-Detection-And-Fixing/
 │
@@ -75,7 +75,7 @@ AI-Bug-Detection-And-Fixing/
 └── .gitignore                 # Git ignored files
 ```
 
-```
+
 
 ---
 
