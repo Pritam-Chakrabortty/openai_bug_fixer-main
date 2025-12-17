@@ -156,7 +156,7 @@ http://127.0.0.1:5000
 
 ## 📄 Documentation
 
-📘 **Project Report:** `Bug_Detection_and_Fixing.docx`
+📘 **Project Report:** `[Bug_Detection_and_Fixing.docx](https://github.com/Pritam-Chakrabortty/openai_bug_fixer-main/releases/download/v1.0-docx/Intel.Unnati.Industrial.Training.Program.2025.PC.docx)`
 
 ---
 
