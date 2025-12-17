@@ -57,21 +57,24 @@ The application is built using **Flask (Python)** with an interactive frontend u
 ## 📁 Project Structure
 
 ```
-INTEL-BUG-DETECTION---FIXING-PROJECT-PC/
-│── __pycache__/                         # Compiled Python files
-│── static/                              # Static assets
-│   └── images/
-│── templates/
-│   └── index.html                       # Frontend UI
-│── app.py                               # Flask application
-│── requirements.txt                     # Dependencies
-│── .env                                 # Environment variables
-│── README.md                            # Project documentation
-│── demo.mp4                             # Demo video
-│── Bug_Detection_and_Fixing.docx        # Project report
-│── Intel_Bug_Detection_Fixing.pptx      # Presentation slides
-│── .gitignore                           # Git ignored files
-│── LICENSE                              # MIT License
+```
+AI-Bug-Detection-And-Fixing/
+│
+├── .vscode/
+│   └── settings.json          # VS Code editor configuration
+│
+├── templates/
+│   └── index.html             # Frontend UI (HTML template)
+│
+├── .env                       # Environment variables (API keys)
+├── app.py                     # Main Flask application
+├── requirements.txt           # Python dependencies
+├── runtime.txt                # Runtime configuration (Render)
+├── README.md                  # Project documentation
+├── LICENSE                    # MIT License
+└── .gitignore                 # Git ignored files
+```
+
 ```
 
 ---
@@ -167,10 +170,17 @@ http://127.0.0.1:5000
 
 ## 📈 Future Enhancements
 
-* CI/CD pipeline integration
-* Unit testing automation
-* More language support
-* Improved AI accuracy
+Implementing user login and authentication system
+
+Ensuring security and privacy of user-submitted code
+
+Improving bug detection and fixing accuracy using advanced AI models
+
+Adding unit testing for validating corrected code
+
+Implementing traffic control and rate limiting for better performance
+
+Developing mobile applications (Android & iOS) for wider accessibility
 
 ---
 
