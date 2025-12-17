@@ -91,8 +91,8 @@ Make sure you have:
 ### 🔹 Clone Repository
 
 ```bash
-git clone https://github.com/Pritam-Chakrabortty/INTEL-BUG-DETECTION---FIXING-PROJECT-PC.git
-cd INTEL-BUG-DETECTION---FIXING-PROJECT-PC
+git clone https://github.com/Pritam-Chakrabortty/openai_bug_fixer-main
+
 ```
 
 ---
