@@ -1,7 +1,7 @@
 # 🐞 Intel Bug Detection & Fixing Project
 
-**Team Name:** Intel Bug Busters**
-**Author:** Pritam Chakrabortty**
+**Team Name:** Intel Bug Busters,
+**Author:** Pritam Chakrabortty
 
 ---
 
